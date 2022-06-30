@@ -1,5 +1,5 @@
 FROM adoptopenjdk:11-jdk-hotspot
-RUN apt update && apt upgrade -y && apt install -y wget 
+RUN apt update && apt upgrade -y && apt install -y curl && apt install -y wget
 RUN adduser --home /home/appuser --shell /bin/sh appuser 
 USER appuser 
 
